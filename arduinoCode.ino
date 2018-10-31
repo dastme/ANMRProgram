@@ -85,8 +85,8 @@ void setup(){
   Serial.begin(1000000);
 
   // turn off some components we don't need.  Should help noise a little, and power use
-  sbi(PRR,PRTWI); // two-wire serial interface
-  sbi(PRR,PRSPI);// spi interface not needed
+  sbi(PRR0,PRTWI); // two-wire serial interface
+  sbi(PRR0,PRSPI);// spi interface not needed
   sbi(ACSR,ACD); //turn off analog comparator
 
   //turn off watchdog timer:
